@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kurjerio skaiciuokle v1</title>
+</head>
+<body>
+    <div class="calculatorBox">
+
+        <form>
+            <div class="formRow">
+                <label for="Dienos pajamos">Dienos pajamos:</label><br>
+                <input class="input-short" type="number" id="Dienos pajamos" name="Dienos pajamos"><br>
+            </div>
+
+            <div class="formRow">
+                <label for="Kuro islaidos">Kuro išlaidos:</label><br>
+                <input class="input-short" type="number" id="Kuro islaidos" name="Kuro islaidos">
+            </div>
+
+            <div class="formRow">
+                <label for="Nuvaziuotas atstumas">Nuvažiuotas atstumas:</label><br>
+                <input class="input-short" type="number" id="Nuvaziuotas atstumas" name="Nuvaziuotas atstumas">
+            </div>
+
+            <div class="formRow">
+                <label for="pristatyti uzsakymai">Pristatyti užsakymai:</label><br>
+                <input class="input-short" type="number" id="pristatyti uzsakymai" name="pristatyti uzsakymai">
+            </div>
+
+            <div class="formRow">
+                <label for="isdribtas laikas">Išdirbtas laikas:</label><br>
+                <input class="input-short" type="number" id="isdribtas laikas" name="isdribtas laikas">
+            </div>
+
+            <div class="formRow">
+                
+                <label for="dienos tempas">Dienos tempas</label><br>
+                <input class="input-long" type="text" id="listInput" list="tempoList" >
+
+                <datalist id="tempoList">
+                    <option value="Extreeme slow">
+                    <option value="Slow">
+                    <option value="Normal">
+                    <option value="Busy">
+                    <option value="Extreeme Busy">
+                    <option value="Mixed: slow lunchtime/busy evening">
+                    <option value="Mixed: busy lunchtime/slow evening"></option>
+                        
+                </datalist>
+            </div>
+       
+
+
+        </form>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

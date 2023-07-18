@@ -1,0 +1,48 @@
+body {
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    font-size:12px;
+}
+
+/* calculator box settings */
+
+.calculatorBox {
+
+    margin-top:10%;
+    border: 1px solid white;
+    color:white;
+    display:flex;
+    width:800px;
+    
+
+}
+
+.formRow {
+    display: flex;
+    margin-bottom: 10px;
+    
+  }
+
+label {
+    width: 150px; /* Adjust as needed */
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+input {
+    width:100px;
+    flex: 1;
+    font-size:12px;
+    
+  }
+
+  .input-long {
+    width: 220px;
+  }
+  
+  .input-short {
+    width: 100px;
+    max-width:100px;
+  }
+
