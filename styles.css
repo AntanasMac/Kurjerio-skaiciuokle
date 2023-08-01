@@ -12,7 +12,7 @@ body {
 
     padding-top:20px;
     margin-top:7%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius:5px;
     color:white;
     display:flex;
@@ -41,8 +41,15 @@ input {
     width:100px;
     flex: 1;
     font-size:12px;
-    
   }
+
+input[type="number"]:focus, input[type="date"]:focus, input[type="text"]:focus {
+  outline:none;
+}
+
+textarea {
+  outline:none;
+}
 
   .input-long {
     width: 220px;
@@ -78,22 +85,24 @@ input[type="submit"] {
   align-content: center;
   margin-left:34%;
   border:none;
-  border-radius:25px;
+  border-radius:5px;
   width:200px;
   height:30px;
   margin-top:10px;
-  text-transform:uppercase;
+  text-transform:capitalize;
+  letter-spacing:2px;
   font-family:Arial, Helvetica, sans-serif;
   cursor:pointer;
-  transition: background-color 0.4s;
   transition: box-shadow 0.4s;
+  transition: background-color 0.4s;
 
   
 }
 
 input[type="submit"]:hover {
-  background-color:rgba(43, 139, 234, 0.692);
+  background-color:rgb(81, 160, 239);
   color:white;
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow:0 1px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.4s;
   
 }
