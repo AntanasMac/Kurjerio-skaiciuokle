@@ -39,8 +39,6 @@ function courierCalculator(dienosPajamos,dienosIslaidos,nuvaziuotasAtstumas,atli
 
   }
 
-  let dienosPajamosInput = 49.36;
-  let PaskaiciavimoRezultatas = courierCalculator(dienosPajamosInput,15,83.9,12,6);
 
   // formos submit --> sudejimas i object
 
@@ -53,8 +51,13 @@ function courierCalculator(dienosPajamos,dienosIslaidos,nuvaziuotasAtstumas,atli
     const message = document.getElementById("message").value;
 
     // Create an object with the form data
-    const formData = {
-      name: name,
-      email: email,
-      message: message
+    const formSubmissionData = {
+      date: date,
+      dienos pajamos: dienos pajamos,
+      kuro islaidos: kuro islaidos,
+      nuvaziuotas atstumas: nuvaziuotas atstumas,
+      pristayti uzsakymai: pristatyti uzsakymai,
+      isdirbtas laikas: isdirbtas laikas,
+      dienos tempas: dienos tempas,
+      komentaras: komentaras,
     };
