@@ -61,3 +61,13 @@ function courierCalculator(dienosPajamos,dienosIslaidos,nuvaziuotasAtstumas,atli
       dienos tempas: dienos tempas,
       komentaras: komentaras,
     };
+
+    // this is for controlling the visual style of the website
+
+    function moveCursor() {
+      var inputElement = document.getElementById("searchInput");
+      
+      // Set the cursor position to a specific index (e.g., 5 in this example)
+      var cursorPosition = 40;
+      inputElement.selectionStart = cursorPosition;
+      inputElement.selectionEnd = cursorPosition;
