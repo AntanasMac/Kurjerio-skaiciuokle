@@ -6,6 +6,11 @@ Ka reikia padaryti:
 
 - statistikos puslapi padaryti
 
+- Target tracker puslapi padaryti
 
+    sitame puslapyje bus galima apsibrezti pvz kokio rezultato nori iki tam tikros datos, tada atsiras
+    togs progress bar, kuris seks 
+
+- Performance puslapi padaryti
 
 
