@@ -11,7 +11,7 @@ body {
 .calculatorBox {
 
     padding-top:40px;
-    margin-top:6%;
+    margin-top:3%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius:5px;
     color:white;
@@ -21,7 +21,8 @@ body {
     height:520px;
     min-width:400px;
     background-color: rgba(19, 7, 86, 0.274);
-    
+    display:none;
+
     
 }
 
@@ -54,7 +55,8 @@ textarea {
 }
 
   .input-long {
-    width: 320px;
+    width: 260px;
+    max-width:260px;
   }
   
   .input-short {
@@ -77,7 +79,7 @@ input[type="submit"] {
   background-color:rgb(43, 139, 234);
   color:white;
   align-content: center;
-  margin-left:41%;
+  margin-left:36%;
   border:none;
   border-radius:5px;
   width:200px;
@@ -115,14 +117,14 @@ input[type="submit"]:hover {
     width: 200px;
     background-color: rgba(19, 7, 86, 0.274);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height:200px;
+    height:210px;
     
 }
 
 /*--- menu buttons ---*/ 
 
 
-#Performance, #Statistics, #dailyReport, #TargetTracker {
+#Performance, #Statistics, #dailyReport, #TargetTracker, #Search {
   
   background-color: rgba(71, 153, 229, 0.721);
   border-radius: 2px;
@@ -138,13 +140,13 @@ input[type="submit"]:hover {
   
 }
 
-#Performance:hover, #Statistics:hover, #dailyReport:hover, #TargetTracker:hover {
+#Performance:hover, #Statistics:hover, #dailyReport:hover, #TargetTracker:hover, #Search:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-left: 12px;
   cursor:pointer;
 }
 
-#Performance:active, #Statistics:active, #dailyReport:active, #TargetTracker:active {
+#Performance:active, #Statistics:active, #dailyReport:active, #TargetTracker:active, #Search:active {
   background-color: rgba(42, 135, 223, 0.721);
 }
 
@@ -158,6 +160,7 @@ input[type="submit"]:hover {
   width: 99%;
   background-color:white;
   border-radius:25px;
+  display:none;
  
 }
 

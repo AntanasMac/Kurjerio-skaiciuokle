@@ -9,13 +9,14 @@
 <body>
 
     <div class="menu">
-        <div id="dailyReport">Daily report</div>
-        <div id="Performance">Performance</div>
-        <div id="Statistics">Statistics</div>
-        <div id="TargetTracker">Target Tracker</div>
+        <div id="dailyReport">Ataskaita</div>
+        <div id="Performance">Apžvalga</div>
+        <div id="Statistics">Statistika</div>
+        <div id="TargetTracker">Tikslai</div>
+        <div id="Search">Paieška</div>
     </div>
     
-    <div class="calculatorBox">
+    <div class="calculatorBox" id="CBelement">
 
         <form id="forma">
 
@@ -74,13 +75,13 @@
             <input type="submit" value="išsiųsti">
         </form>
 
-        <div class="searchBox">
-            <input id="searchInput" type="text" class="searchBoxInput" placeholder="search the database by date ...">
-        </div> 
-    
-
     </div>
+
+    <div class="searchBox">
+        <input id="searchInput" type="text" class="searchBoxInput" placeholder="search the database by date ...">
+    </div> 
     
     <script src="app.js"></script>
+    <script src="menu_functionality.js"></script>
 </body>
 </html>
