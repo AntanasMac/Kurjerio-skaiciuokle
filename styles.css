@@ -63,18 +63,6 @@ textarea {
   }
 
 
-  /* menu box */
-
-.menu {
-    
-    color:white;
-    margin-left:1%;
-    display:flex;
-    width: 200px;
-    background-color: rgba(19, 7, 86, 0.274);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-}
 
 .resizeable {
   
@@ -113,18 +101,67 @@ input[type="submit"]:hover {
   
 }
 
-.menuButton {
+/* MENU SECTION ### ### ### ### ### ### ### */
+
+  /* menu box */
+
+  .menu {
+    
+    color:white;
+    margin-left:1%;
+    display:flex;
+    flex-direction:column;
+    width: 200px;
+    background-color: rgba(19, 7, 86, 0.274);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height:200px;
+    
+}
+
+/*--- menu buttons ---*/ 
+
+#dailyReport {
   border: 1px solid white;
   background-color: rgb(81, 160, 239);
   border-radius: 2px;
   height:30px;
   width:180px;
   display:flex;
-  align-items:center;
+  justify-content:center;
+  line-height:30px;
   margin-top:10px;
   margin-left:10px;
-  justify-items:auto;
+  
 }
+
+#Performance {
+  border: 1px solid white;
+  background-color: rgb(81, 160, 239);
+  border-radius: 2px;
+  height:30px;
+  width:180px;
+  display:flex;
+  justify-content:center;
+  line-height:30px;
+  margin-top:10px;
+  margin-left:10px;
+  
+}
+
+#Statistics {
+  border: 1px solid white;
+  background-color: rgb(81, 160, 239);
+  border-radius: 2px;
+  height:30px;
+  width:180px;
+  display:flex;
+  justify-content:center;
+  line-height:30px;
+  margin-top:10px;
+  margin-left:10px;
+  
+}
+
 
 .searchBox {
 

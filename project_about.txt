@@ -1,5 +1,11 @@
 Ka reikia padaryti:
 
+- search funkcionaluma implementuoti
+
+- sujungti su duombaze, kad pradetu veikti appsas
+
+- statistikos puslapi padaryti
+
 
 
 
