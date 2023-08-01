@@ -56,3 +56,11 @@ input {
     margin-left:1%;
     margin-top:20px;
 }
+
+.resizeable {
+  
+    resize: height;
+    overflow: auto;
+    max-width:221px;
+  
+}
