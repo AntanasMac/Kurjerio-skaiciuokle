@@ -14,3 +14,7 @@ Ka reikia padaryti:
 - Performance puslapi padaryti
 
 
+// sources
+
+    Main JSON tutorial that I used for building up to storing form data into an object
+    https://www.youtube.com/watch?v=IWcUJLUAO2A

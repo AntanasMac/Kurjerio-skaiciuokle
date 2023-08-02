@@ -81,6 +81,12 @@ function addToStorage(){
   }
 
 //converting the created object into a JSON string format
+  const FORM_DATA_JSON_STRING = JSON.stringify(FORM_DATA[INPUT_DATE]);
+
+// Add the JSON string to the localStorage 
+localStorage.setItem(INPUT_DATE, FORM_DATA_JSON_STRING);
+
+
 
   console.log(FORM_DATA);
 // this is commented out because fucking tutorial is retarded
