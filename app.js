@@ -1,41 +1,41 @@
-function courierCalculator(dienosPajamos,dienosIslaidos,nuvaziuotasAtstumas,atliktiUzsakymai,isdirbtasLaikas) {
+function courierCalculator(dailyIncome,dailyExpenses,distanceDriven,ordersCompleted,hoursWorked) {
 
-    const mokesciai = 0.21;
-    const taupymasRemontams = 0.20;
+    const TAXES = 0.21;
+    const REPAIR_SAVINGS = 0.20;
 
-    const MokestinisPaskaiciavimas = dienosPajamos * mokesciai;
-    const mokestinisPaskaiciavimasSuapvalintas = MokestinisPaskaiciavimas.toFixed(2);
+    const TAX_CALCULATION = dailyIncome * TAXES;
+    const TAX_CALCULATION_ROUNDED = TAX_CALCULATION.toFixed(2);
 
-    const TaupymoPaskaiciavimas = (dienosPajamos - MokestinisPaskaiciavimas) * taupymasRemontams;
-    const taupymasRemontamsSuapvalintas = TaupymoPaskaiciavimas.toFixed(2);
+    const REPAIR_SAVINGS_CALCULATION = (dailyIncome - TAX_CALCULATION) * REPAIR_SAVINGS;
+    const REPAIR_SAVINGS_CALCULATION_ROUNDED = REPAIR_SAVINGS_CALCULATION.toFixed(2);
 
-    const valandinisPelnas = dienosPajamos / isdirbtasLaikas;
-    const valandinisPelnasSuapvalintas = valandinisPelnas.toFixed(2);
+    const HOURLY_INCOME_CALCULATION = dailyIncome / hoursWorked;
+    const HOURLY_INCOME_CALCULATION_ROUNDED = HOURLY_INCOME_CALCULATION.toFixed(2);
 
-    const uzsakymoIkainis = dienosPajamos / atliktiUzsakymai;
-    const uzsakymoIkainisSuapvalintas = uzsakymoIkainis.toFixed(2);
+    const ORDER_AVERAGE_INCOME_CALCULATION = dailyIncome / ordersCompleted;
+    const ORDER_AVERAGE_INCOME_CALCULATION_ROUNDED = ORDER_AVERAGE_INCOME_CALCULATION.toFixed(2);
 
-    const galutinisPelnas = dienosPajamos - (MokestinisPaskaiciavimas + TaupymoPaskaiciavimas + dienosIslaidos);
-    const galutinisPelnasSuapvalintas = galutinisPelnas.toFixed(2);
+    const NET_INCOME_CALCULATION = dailyIncome - (TAX_CALCULATION + REPAIR_SAVINGS_CALCULATION + dailyExpenses);
+    const NET_INCOME_CALCULATION_ROUNDED = NET_INCOME_CALCULATION.toFixed(2);
 
-    const dienosRealusisValandinisIkainis = galutinisPelnas / isdirbtasLaikas;
-    const dienosRealusisValandinisIkainisSuapvalintas = dienosRealusisValandinisIkainis.toFixed(2);
+    const HOURLY_RATE_AFTER_ALL_EXPENSES_CALCULATION = NET_INCOME_CALCULATION / hoursWorked;
+    const HOURLY_RATE_AFTER_ALL_EXPENSES_CALCULATION_ROUNDED = HOURLY_RATE_AFTER_ALL_EXPENSES_CALCULATION.toFixed(2);
 
-    const kilometroUzdarbis = galutinisPelnas / nuvaziuotasAtstumas;
-    const kilometroUzdarbisSuapvalinus = kilometroUzdarbis.toFixed(2);
+    const KILOMETER_NET_PAY_CALCULATION = NET_INCOME_CALCULATION / distanceDriven;
+    const KILOMETER_NET_PAY_CALCULATION_ROUNDED = KILOMETER_NET_PAY_CALCULATION.toFixed(2);
    
 
-    console.log(`dienosPajamos: ${dienosPajamos}`);
-    console.log(`kiek atsideti mokesciams: ${mokestinisPaskaiciavimasSuapvalintas}`);
-    console.log(`kiek atsideti taupymui remontams: ${taupymasRemontamsSuapvalintas}`);
-    console.log(`nuvaziuotas atstumas: ${nuvaziuotasAtstumas}`);
-    console.log(`Atliktu uzsakymu skaicius: ${atliktiUzsakymai}`);
-    console.log(`vidutiniskas vieno uzsakymo ikainis: ${uzsakymoIkainisSuapvalintas}`);
-    console.log(`Isdirbtas laikas: ${isdirbtasLaikas}`);
-    console.log(`Valandinis pelnas: ${valandinisPelnasSuapvalintas}`);
-    console.log(`Vidutinikas nuvaziuoto kilometro uzdarbis: ${kilometroUzdarbisSuapvalinus}`);
-    console.log(`Dienos galutinis pelnas: ${galutinisPelnasSuapvalintas}`);
-    console.log(`Vienos valandos darbo realusis uzdarbis (atskaicius darbui butinas sanaudas/mokescius/taupyma remontams): ${dienosRealusisValandinisIkainisSuapvalintas}`);
+    console.log(`Daily income: ${dailyIncome}`);
+    console.log(`Amount of taxes: ${TAX_CALCULATION_ROUNDED}`);
+    console.log(`Savings for repairs: ${REPAIR_SAVINGS_CALCULATION_ROUNDED}`);
+    console.log(`Distance driven: ${distanceDriven}`);
+    console.log(`Orders completed: ${ordersCompleted}`);
+    console.log(`Average order pay: ${ORDER_AVERAGE_INCOME_CALCULATION_ROUNDED}`);
+    console.log(`Hours worked: ${hoursWorked}`);
+    console.log(`Gross hourly income: ${HOURLY_INCOME_CALCULATION_ROUNDED}`);
+    console.log(`Average pay per kilometer: ${KILOMETER_NET_PAY_CALCULATION_ROUNDED}`);
+    console.log(`Net daily income: ${NET_INCOME_CALCULATION_ROUNDED}`);
+    console.log(`Net hourly income (after all deductions): ${HOURLY_RATE_AFTER_ALL_EXPENSES_CALCULATION_ROUNDED}`);
 
   }
 

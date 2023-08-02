@@ -8,7 +8,7 @@ body {
 
 /* calculator box settings */
 
-.calculatorBox {
+.Calculator-box {
 
     padding-top:40px;
     margin-top:3%;
@@ -26,7 +26,7 @@ body {
     
 }
 
-.formRow {
+.Form-row {
     display: flex;
     margin-bottom: 15px;
     
@@ -54,19 +54,19 @@ textarea {
   font-size: 12px;
 }
 
-  .input-long {
+  .Input-long {
     width: 260px;
     max-width:260px;
   }
   
-  .input-short {
+  .Input-short {
     width: 200px;
     max-width:200px;
   }
 
 
 
-.resizeable {
+.Resizeable {
   
     resize:none;
     overflow:scroll;
@@ -107,7 +107,7 @@ input[type="submit"]:hover {
 
   /* menu box */
 
-  .menu {
+  .Menu {
     
     color:rgb(255, 255, 255);
     font-weight:1000;
@@ -124,7 +124,7 @@ input[type="submit"]:hover {
 /*--- menu buttons ---*/ 
 
 
-#Performance, #Statistics, #dailyReport, #TargetTracker, #Search {
+#performance, #statistics, #daily-report, #target-tracker, #search {
   
   background-color: rgba(71, 153, 229, 0.721);
   border-radius: 2px;
@@ -140,18 +140,18 @@ input[type="submit"]:hover {
   
 }
 
-#Performance:hover, #Statistics:hover, #dailyReport:hover, #TargetTracker:hover, #Search:hover {
+#performance:hover, #statistics:hover, #daily-report:hover, #target-tracker:hover, #search:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-left: 12px;
   cursor:pointer;
 }
 
-#Performance:active, #Statistics:active, #dailyReport:active, #TargetTracker:active, #Search:active {
+#performance:active, #statistics:active, #daily-report:active, #target-tracker:active, #search:active {
   background-color: rgba(42, 135, 223, 0.721);
 }
 
 
-.searchBox {
+.Search-box {
 
   padding: 0;
   margin-left:-85%;
@@ -164,7 +164,7 @@ input[type="submit"]:hover {
  
 }
 
-.searchBoxInput {
+.Search-box-input {
   width:95%;
   height:40px;
   border-radius:25px;

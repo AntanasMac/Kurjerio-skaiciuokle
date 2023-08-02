@@ -8,52 +8,52 @@
 </head>
 <body>
 
-    <div class="menu">
-        <div id="dailyReport">Ataskaita</div>
-        <div id="Performance">Apžvalga</div>
-        <div id="Statistics">Statistika</div>
-        <div id="TargetTracker">Tikslai</div>
-        <div id="Search">Paieška</div>
+    <div class="Menu">
+        <div id="daily-report">Ataskaita</div>
+        <div id="performance">Apžvalga</div>
+        <div id="statistics">Statistika</div>
+        <div id="target-tracker">Tikslai</div>
+        <div id="search">Paieška</div>
     </div>
     
-    <div class="calculatorBox" id="CBelement">
+    <div class="Calculator-box" id="calculator-box-element">
 
         <form id="forma">
 
-            <div class="formRow">
+            <div class="Form-row">
                 <label for="date">Data:</label><br>
-                <input class="input-short" type="date" id="date" name="date"><br>
+                <input class="Input-short" type="date" id="date" name="date"><br>
             </div>    
 
-            <div class="formRow">
+            <div class="Form-row">
                 <label for="Dienos pajamos">Dienos pajamos:</label><br>
-                <input class="input-short" type="number" id="Dienos pajamos" name="Dienos pajamos"><br>
+                <input class="Input-short" type="number" id="Dienos pajamos" name="Dienos pajamos"><br>
             </div>
 
-            <div class="formRow">
+            <div class="Form-row">
                 <label for="Kuro islaidos">Kuro išlaidos:</label><br>
-                <input class="input-short" type="number" id="Kuro islaidos" name="Kuro islaidos">
+                <input class="Input-short" type="number" id="Kuro islaidos" name="Kuro islaidos">
             </div>
 
-            <div class="formRow">
+            <div class="Form-row">
                 <label for="Nuvaziuotas atstumas">Nuvažiuotas atstumas:</label><br>
-                <input class="input-short" type="number" id="Nuvaziuotas atstumas" name="Nuvaziuotas atstumas">
+                <input class="Input-short" type="number" id="Nuvaziuotas atstumas" name="Nuvaziuotas atstumas">
             </div>
 
-            <div class="formRow">
+            <div class="Form-row">
                 <label for="pristatyti uzsakymai">Pristatyti užsakymai:</label><br>
-                <input class="input-short" type="number" id="pristatyti uzsakymai" name="pristatyti uzsakymai">
+                <input class="Input-short" type="number" id="pristatyti uzsakymai" name="pristatyti uzsakymai">
             </div>
 
-            <div class="formRow">
+            <div class="Form-row">
                 <label for="isdribtas laikas">Išdirbtas laikas:</label><br>
-                <input class="input-short" type="number" id="isdribtas laikas" name="isdribtas laikas">
+                <input class="Input-short" type="number" id="isdribtas laikas" name="isdribtas laikas">
             </div>
 
-            <div class="formRow">
+            <div class="Form-row">
                 
                 <label for="dienos tempas">Dienos tempas:</label><br>
-                <input class="input-long" type="text" id="listInput" list="tempoList" >
+                <input class="Input-long" type="text" id="list-input" list="tempoList" >
 
                 <datalist id="tempoList">
                     <option value="Extreeme slow">
@@ -67,9 +67,9 @@
                 </datalist>
             </div>
        
-            <div class="formRow">
+            <div class="Form-row">
                 <label for="komentaras">Komentaras (optional):</label><br>
-                <textarea class="input-long resizeable" id="komentaras" name="komentaras" style="height: 50px;"></textarea>
+                <textarea class="Input-long Resizeable" id="comment-input" name="komentaras" style="height: 50px;"></textarea>
 
             </div>
             <input type="submit" value="išsiųsti">
@@ -77,8 +77,8 @@
 
     </div>
 
-    <div class="searchBox">
-        <input id="searchInput" type="text" class="searchBoxInput" placeholder="search the database by date ...">
+    <div class="Search-box">
+        <input id="search-input" type="text" class="Search-box-input" placeholder="search the database by date ...">
     </div> 
     
     <script src="app.js"></script>

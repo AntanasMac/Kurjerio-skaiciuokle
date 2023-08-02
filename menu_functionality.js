@@ -1,21 +1,21 @@
 // menu box funckionalumas
 
   
-const dailyReport = document.getElementById('dailyReport');
-let DailyReportClickCounter = false;
+const DAILYREPORT = document.getElementById('daily-report');
+let dailyReportClickCounter = false;
 
 
-dailyReport.addEventListener('click', function clicker(){
+DAILYREPORT.addEventListener('click', function clicker(){
 
-if (DailyReportClickCounter === false){
-const calculatorBoxCSS= document.querySelector('#CBelement');
-calculatorBoxCSS.style.display = 'block';
+if (dailyReportClickCounter === false){
+const CALCULATORBOXCSS= document.querySelector('#calculator-box-element');
+CALCULATORBOXCSS.style.display = 'block';
 console.log('calculator box visible');
-DailyReportClickCounter = true;} 
+dailyReportClickCounter = true;} 
 
-else if(DailyReportClickCounter === true){
-const calculatorBoxCSS= document.querySelector('#CBelement');
-calculatorBoxCSS.style.display = 'none';
+else if(dailyReportClickCounter === true){
+const CALCULATORBOXCSS= document.querySelector('#calculator-box-element');
+CALCULATORBOXCSS.style.display = 'none';
 console.log('calculator box visible');
-return DailyReportClickCounter = false;
+return dailyReportClickCounter = false;
 }});
