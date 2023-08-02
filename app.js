@@ -1,3 +1,11 @@
+let dailyIncome = "";
+
+
+
+
+
+
+
 function courierCalculator(dailyIncome,dailyExpenses,distanceDriven,ordersCompleted,hoursWorked) {
 
     const TAXES = 0.21;
