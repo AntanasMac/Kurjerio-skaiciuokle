@@ -3,9 +3,6 @@ let dailyIncome = "";
 
 
 
-
-
-
 function courierCalculator(dailyIncome, dailyExpenses, distanceDriven, ordersCompleted, hoursWorked) {
 
     const TAXES = 0.21;
@@ -46,4 +43,46 @@ function courierCalculator(dailyIncome, dailyExpenses, distanceDriven, ordersCom
     console.log(`Net hourly income (after all deductions): ${HOURLY_RATE_AFTER_ALL_EXPENSES_CALCULATION_ROUNDED}`);
 
   }
+
+
+// STORING FORM DATA TO SERVER
+
+
+const DAILY_REPORT_FORM = document.getElementById('daily_report_form');
+
+//event listener for the submit
+DAILY_REPORT_FORM.addEventListener('submit', addToStorage);
+const CALCULATORBOXCSS = document.querySelector('#calculator_box_element');
+
+function addToStorage(){
+  //prevent default submit button action
+  event.preventDefault()
+
+  const INPUT_DATE = document.getElementById('date').value;
+  const INPUT_INCOME = document.getElementById('daily_income').value;
+  const INPUT_EXPENSES = document.getElementById('daily_expenses').value;
+  const INPUT_DISTANCE = document.getElementById('distance_driven').value;
+  const INPUT_ORDERS = document.getElementById('orders_completed').value;
+  const INPUT_WORKHOURS = document.getElementById('hours_worked').value;
+  const INPUT_TEMPO = document.getElementById('list_input').value;
+  const INPUT_COMMENT = document.getElementById('comment_input').value;
+
+console.log(INPUT_DATE);
+console.log(INPUT_INCOME);
+console.log(INPUT_EXPENSES);
+console.log(INPUT_DISTANCE);
+console.log(INPUT_ORDERS);
+console.log(INPUT_WORKHOURS);
+console.log(INPUT_TEMPO);
+console.log(INPUT_COMMENT);
+
+
+//closing the dialog box
+CALCULATORBOXCSS.style.display = 'none'
+return dailyReportClickCounter = false;
+};
+
+
+
+
 
