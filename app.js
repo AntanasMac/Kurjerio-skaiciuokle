@@ -1,4 +1,3 @@
-
 // CALCULATOR FUNCTIONALITY
 
 function courierCalculator(dailyIncome, dailyExpenses, distanceDriven, ordersCompleted, hoursWorked) {
@@ -86,18 +85,7 @@ function addToStorage(){
 // Add the JSON string to the localStorage 
 localStorage.setItem(INPUT_DATE, FORM_DATA_JSON_STRING);
 
-
-
   console.log(FORM_DATA);
-// this is commented out because fucking tutorial is retarded
-  // localStorage.setItem('date',INPUT_DATE);
-  // localStorage.setItem('income',INPUT_INCOME);
-  // localStorage.setItem('expenses',INPUT_EXPENSES);
-  // localStorage.setItem('distance driven',INPUT_DISTANCE);
-  // localStorage.setItem('completed orders',INPUT_ORDERS);
-  // localStorage.setItem('hours worked',INPUT_WORKHOURS);
-  // localStorage.setItem('days tempo',INPUT_TEMPO);
-  // localStorage.setItem('comment',INPUT_COMMENT);
 
 //closing the dialog box after data is sent to server
   CALCULATORBOXCSS.style.display = 'none'

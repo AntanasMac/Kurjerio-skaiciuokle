@@ -1,8 +1,13 @@
 Ka reikia padaryti:
 
+
+
+
 - search funkcionaluma implementuoti
 
 - sujungti su duombaze, kad pradetu veikti appsas
+
+    tai reiskia reikia susetupinti node.js serveri!!!!!!
 
 - statistikos puslapi padaryti
 
@@ -18,3 +23,5 @@ Ka reikia padaryti:
 
     Main JSON tutorial that I used for building up to storing form data into an object
     https://www.youtube.com/watch?v=IWcUJLUAO2A
+
+    nuo ~50 min prasideda komunikacija su API's ir kaip gauti JSON data is kitu serveriu pas save!
