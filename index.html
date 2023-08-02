@@ -4,58 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Kurjerio skaiciuokle v1</title>
+    <title>Kurjerio skaiciuokle v2</title>
 </head>
 <body>
 
-    <div class="Menu">
-        <div id="daily-report">Ataskaita</div>
+    <div class="menu">
+        <div id="daily_report">Ataskaita</div>
         <div id="performance">Apžvalga</div>
         <div id="statistics">Statistika</div>
-        <div id="target-tracker">Tikslai</div>
+        <div id="target_tracker">Tikslai</div>
         <div id="search">Paieška</div>
     </div>
     
-    <div class="Calculator-box" id="calculator-box-element">
+    <div class="calculator_box" id="calculator_box_element">
 
-        <form id="forma">
+        <form id="daily_report_form">
 
-            <div class="Form-row">
+            <div class="form_row">
                 <label for="date">Data:</label><br>
-                <input class="Input-short" type="date" id="date" name="date"><br>
+                <input class="input_short" type="date" id="date" name="date"><br>
             </div>    
 
-            <div class="Form-row">
-                <label for="Dienos pajamos">Dienos pajamos:</label><br>
-                <input class="Input-short" type="number" id="daily-income" name="Dienos pajamos"><br>
+            <div class="form_row">
+                <label for="daily-income">Dienos pajamos:</label><br>
+                <input class="input_short" type="number" id="daily_income" name="daily_income"><br>
             </div>
 
-            <div class="Form-row">
-                <label for="Kuro islaidos">Kuro išlaidos:</label><br>
-                <input class="Input-short" type="number" id="daily-expenses" name="Kuro islaidos">
+            <div class="form_row">
+                <label for="daily_expenses">Kuro išlaidos:</label><br>
+                <input class="input_short" type="number" id="daily_expenses" name="daily_expenses">
             </div>
 
-            <div class="Form-row">
-                <label for="Nuvaziuotas atstumas">Nuvažiuotas atstumas:</label><br>
-                <input class="Input-short" type="number" id="distance-driven" name="Nuvaziuotas atstumas">
+            <div class="form_row">
+                <label for="distance_driven">Nuvažiuotas atstumas:</label><br>
+                <input class="input_short" type="number" id="distance_driven" name="distance_driven">
             </div>
 
-            <div class="Form-row">
-                <label for="pristatyti uzsakymai">Pristatyti užsakymai:</label><br>
-                <input class="Input-short" type="number" id="orders-completed" name="pristatyti uzsakymai">
+            <div class="form_row">
+                <label for="orders_completed">Pristatyti užsakymai:</label><br>
+                <input class="input_short" type="number" id="orders_completed" name="orders_completed">
             </div>
 
-            <div class="Form-row">
-                <label for="isdribtas laikas">Išdirbtas laikas:</label><br>
-                <input class="Input-short" type="number" id="hours-worked" name="isdribtas laikas">
+            <div class="form_row">
+                <label for="hours_worked">Išdirbtas laikas:</label><br>
+                <input class="input_short" type="number" id="hours_worked" name="hours_worked">
             </div>
 
-            <div class="Form-row">
+            <div class="form_row">
                 
-                <label for="dienos tempas">Dienos tempas:</label><br>
-                <input class="Input-long" type="text" id="list-input" list="tempoList" >
+                <label for="tempo_list">Dienos tempas:</label><br>
+                <input class="input_long" type="text" id="list_input" list="tempo_list" >
 
-                <datalist id="tempo-list">
+                <datalist id="tempo_list">
                     <option value="Extreeme slow">
                     <option value="Slow">
                     <option value="Normal">
@@ -67,9 +67,9 @@
                 </datalist>
             </div>
        
-            <div class="Form-row">
-                <label for="komentaras">Komentaras (optional):</label><br>
-                <textarea class="Input-long Resizeable" id="comment-input" name="komentaras" style="height: 50px;"></textarea>
+            <div class="form_row">
+                <label for="comment">Komentaras (optional):</label><br>
+                <textarea class="input_long resizeable" id="comment_input" name="comment" style="height: 50px;"></textarea>
 
             </div>
             <input type="submit" value="išsiųsti">
@@ -77,8 +77,8 @@
 
     </div>
 
-    <div class="Search-box">
-        <input id="search-input" type="text" class="Search-box-input" placeholder="search the database by date ...">
+    <div class="search_box">
+        <input id="search_input" type="text" class="search_box_input" placeholder="search the database by date ...">
     </div> 
     
     <script src="app.js"></script>

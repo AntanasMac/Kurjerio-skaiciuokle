@@ -6,7 +6,7 @@ let dailyIncome = "";
 
 
 
-function courierCalculator(dailyIncome,dailyExpenses,distanceDriven,ordersCompleted,hoursWorked) {
+function courierCalculator(dailyIncome, dailyExpenses, distanceDriven, ordersCompleted, hoursWorked) {
 
     const TAXES = 0.21;
     const REPAIR_SAVINGS = 0.20;
@@ -46,32 +46,4 @@ function courierCalculator(dailyIncome,dailyExpenses,distanceDriven,ordersComple
     console.log(`Net hourly income (after all deductions): ${HOURLY_RATE_AFTER_ALL_EXPENSES_CALCULATION_ROUNDED}`);
 
   }
-
-
-  // // formos submit --> sudejimas i object
-
-  // document.getElementById("forma").addEventListener("submit", function(event) {
-  //   event.preventDefault(); // Prevent the default form submission behavior
-
-  //   // Get form input values
-  //   const name = document.getElementById("name").value;
-  //   const email = document.getElementById("email").value;
-  //   const message = document.getElementById("message").value;
-
-  //   // Create an object with the form data
-  //   const formSubmissionData = {
-  //     date: date,
-  //     dienos pajamos: dienos pajamos,
-  //     kuro islaidos: kuro islaidos,
-  //     nuvaziuotas atstumas: nuvaziuotas atstumas,
-  //     pristayti uzsakymai: pristatyti uzsakymai,
-  //     isdirbtas laikas: isdirbtas laikas,
-  //     dienos tempas: dienos tempas,
-  //     komentaras: komentaras,
-  //   };
-
-
-//  if (calculatorBoxCSS.style.display = 'block'){
-//   calculatorBoxCSS.style.display = 'none';
-// }
 
