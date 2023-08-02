@@ -1,7 +1,5 @@
-let dailyIncome = "";
 
-
-
+// CALCULATOR FUNCTIONALITY
 
 function courierCalculator(dailyIncome, dailyExpenses, distanceDriven, ordersCompleted, hoursWorked) {
 
@@ -44,20 +42,20 @@ function courierCalculator(dailyIncome, dailyExpenses, distanceDriven, ordersCom
 
   }
 
-
-// STORING FORM DATA TO SERVER
-
+// WORK IN PROGRESS
+// STORING FORM INPUT DATA TO --> SERVER
 
 const DAILY_REPORT_FORM = document.getElementById('daily_report_form');
 
-//event listener for the submit
+//event listener for the submit button
 DAILY_REPORT_FORM.addEventListener('submit', addToStorage);
 const CALCULATORBOXCSS = document.querySelector('#calculator_box_element');
 
 function addToStorage(){
-  //prevent default submit button action
+  //prevents default submit button action
   event.preventDefault()
 
+//grabbing form data and storing in variables  
   const INPUT_DATE = document.getElementById('date').value;
   const INPUT_INCOME = document.getElementById('daily_income').value;
   const INPUT_EXPENSES = document.getElementById('daily_expenses').value;
@@ -67,19 +65,37 @@ function addToStorage(){
   const INPUT_TEMPO = document.getElementById('list_input').value;
   const INPUT_COMMENT = document.getElementById('comment_input').value;
 
-console.log(INPUT_DATE);
-console.log(INPUT_INCOME);
-console.log(INPUT_EXPENSES);
-console.log(INPUT_DISTANCE);
-console.log(INPUT_ORDERS);
-console.log(INPUT_WORKHOURS);
-console.log(INPUT_TEMPO);
-console.log(INPUT_COMMENT);
+// storing the user form input data into an object
+  const FORM_DATA = {};
 
+//the users specified date becomes the name of the object that stores the filled up form
+  FORM_DATA[INPUT_DATE] = {
+    'date':INPUT_DATE, 
+    'income':INPUT_INCOME, 
+    'expenses':INPUT_EXPENSES,
+    'distance':INPUT_DISTANCE,
+    'completed orders':INPUT_ORDERS,
+    'hours worked':INPUT_WORKHOURS,
+    'tempo':INPUT_TEMPO,
+    'comment':INPUT_COMMENT,
+  }
 
-//closing the dialog box
-CALCULATORBOXCSS.style.display = 'none'
-return dailyReportClickCounter = false;
+//converting the created object into a JSON string format
+
+  console.log(FORM_DATA);
+// this is commented out because fucking tutorial is retarded
+  // localStorage.setItem('date',INPUT_DATE);
+  // localStorage.setItem('income',INPUT_INCOME);
+  // localStorage.setItem('expenses',INPUT_EXPENSES);
+  // localStorage.setItem('distance driven',INPUT_DISTANCE);
+  // localStorage.setItem('completed orders',INPUT_ORDERS);
+  // localStorage.setItem('hours worked',INPUT_WORKHOURS);
+  // localStorage.setItem('days tempo',INPUT_TEMPO);
+  // localStorage.setItem('comment',INPUT_COMMENT);
+
+//closing the dialog box after data is sent to server
+  CALCULATORBOXCSS.style.display = 'none'
+  return dailyReportClickCounter = false;
 };
 
 
