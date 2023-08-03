@@ -7,7 +7,8 @@ Ka reikia padaryti:
 
 - sujungti su duombaze, kad pradetu veikti appsas
 
-    tai reiskia reikia susetupinti node.js serveri!!!!!!
+    // server running, main pages working as intended
+        - dabar reikia sujungti su duombaze
 
 - statistikos puslapi padaryti
 
@@ -25,3 +26,4 @@ Ka reikia padaryti:
     https://www.youtube.com/watch?v=IWcUJLUAO2A
 
     nuo ~50 min prasideda komunikacija su API's ir kaip gauti JSON data is kitu serveriu pas save!
+    Taip pat tutorialas kaip is googlesheets paimti duomenis realtime ir pas save i weba permesti (dynamical)
