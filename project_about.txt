@@ -27,3 +27,7 @@ Ka reikia padaryti:
 
     nuo ~50 min prasideda komunikacija su API's ir kaip gauti JSON data is kitu serveriu pas save!
     Taip pat tutorialas kaip is googlesheets paimti duomenis realtime ir pas save i weba permesti (dynamical)
+
+    
+    #2023 08 10
+    connected to the project via my new linux installation
